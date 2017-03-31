@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webshop</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Your personal advisor for adventurous travel experiences in Asia.">
+	<meta name="keywords" content="AsianAdventures, traveling, travel agency, Asia, travel, trip, adventure">
+	<meta name="author" content="Tim and Shaqquile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/global.script.js"></script>
+</head>
+<body contextmenu="context_menu">
+        <header>
+		<div id="header_inner">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="destinations.html">Registreren</a>
+				<a href="about.html">Inloggen</a>
+				<a href="discover.html" class="cart_btn">2 products</a>
+			</nav>
+			<a href="index.html">
+				<img id="logo" src="img/logo.png" alt="Logo" title="Logo" />
+			</a>
+		</div>
+	</header>
+        <main>
+		<section id="content_product">
+			<table class="product">
+				<div class="product_head">
+					<a class="product_add" href="#buylink">add to</a>
+					<h1 class="product_title">Laptop 13"</h1>
+					<h2 class="product_description_short">8GB RAM memory, one year warranty</h2>
+					<h3 class="product_price">€599,-</h3>	
+				</div>
+				<div class="product_body">			
+					<div class="product_description">More information about this prod...</div>
+					<div class="product_details">Detailed information</div>
+				</div>
+				<div class="product_showcase">
+					<figure class="product_image">
+						<img src="/img/product/209720.jpg" alt="Product title" title="Product title" />
+					</figure>
+				</div>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<table>
+			<tr>
+				<td>
+					&copy; 2017 Asian Adventures
+				</td>
+				<td>
+					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
+					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
+					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+	<menu type="context" id="context_menu">
+		<menuitem label="Toggle Bold" class="boldtrigger"></menuitem>
+		<menuitem label="Toggle Italic" class="italictrigger"></menuitem>
+		<menu label="Change Color Theme to:">
+			<menuitem label="Default (Grey)" class="colortrigger_default"></menuitem>
+			<menuitem label="Green" class="colortrigger_green"></menuitem>
+			<menuitem label="Red" class="colortrigger_red"></menuitem>
+			<menuitem label="Blue" class="colortrigger_blue"></menuitem>
+		</menu>
+	</menu>
+	<script type="text/javascript" src="js/comment.script.js"></script>
+</body>
+</html>
