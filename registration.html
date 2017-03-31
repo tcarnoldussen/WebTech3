@@ -15,27 +15,25 @@
 			</a>
 			<nav>
 				<a href="index.html">Home</a>
-				<a href="discover.html">Discover</a>
-				<a href="destinations.html">Destinations</a>
 				<a href="about.html">About us</a>					
 				<a href="contact.html">Contact</a>
 				<a href="log_in.html">Log in</a>
 				<a href="registration.html" class="current">Registrate now</a>
-				<a href="http://libertytravel.com" target="_blank" class="button_nav">Book now</a>
 			</nav>
 		</div>
 	</header>
     <main>
 		<section id="content_destinations">
 			<h1>Registration Form</h1>
-			<form id="registration_form" method="post">
+			<form action="log_in.html" id="registration_form" method="post">
+			<fieldset class="form_box white_bg">
 				<div id="genderchoice">
 					<h4>Gender</h4><br>
 					<label for="male">
-						<input type="radio" name="gender" id="male" value="male"> Male<br>
+						<input type="radio" name="gender" id="male" value="male"> Male
 					</label>
 					<label for="female">
-						<input type="radio" name="gender" id="female" value="female">Female<br>
+						<input type="radio" name="gender" id="female" value="female">Female
 					</label>
 				</div>
 				<div id="countrychoice">
@@ -48,37 +46,37 @@
 					</select>
 				</div> 
 				<div id="firstname" class="form-row">
-					First name<input type="text" name="first_name">
+					First name <input type="text" name="first_name">
 				</div>
 				<div id="lastname" class="form-row">
-					Last name<input type="text" name="last_name">
+					Last name <input type="text" name="last_name">
 				</div>
 				<div id="streetname" class="form-row">
-					Street name<input type="text" name="street_name">
+					Street name <input type="text" name="street_name">
 				</div>
 				<div id="streetnumber" class="form-row">
-					Street number<input type="text" name="street_number">
+					Street number <input type="text" name="street_number">
+				</div>
+				<div id="city" class="form-row">
+					City <input type="text" name="city">
 				</div>
 				<div id="telephonenumber" class="form-row">
-					Telephone Number<input type="text" name="telephone_number">
-				</div>
-				<div id="" class="form-row">
+					Telephone Number <input type="text" name="telephone_number">
 				</div>
 				<div id="username" class="form-row">
-					Enter the ID name you want to use<input type="text" name="user_name">
+					Enter the ID name you want to use <input type="text" name="user_name">
 				</div>
 				<div id="emailadress" class="form-row">
-					Enter a email adress<input type="text" name="registration_emailadress">
+					Enter a email adress <input type="text" name="registration_emailadress">
 				</div>
 				<div id="pass" class="form-row">
-					Enter a password<input type="text" name="password">
+					Enter a password <input type="text" name="password">
 				</div>
 				<div id="re_pass" class="form-row">
-					Re-enter your chosen password<input type="text" name="password">
+					Re-enter your chosen password <input type="text" name="password">
 				</div>
-				<a href="log_in.html">
 				<input type="submit" value="Confirm">
-				</a>
+			</fieldset>
 			</form>
 		</section>
 	</main>
