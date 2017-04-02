@@ -3,8 +3,11 @@ m a n u id	name		e-mail			phone			address (SPELLING AANPASSEN IN DB)
 130114210001	Nokia		contact@nokia.com	+358 10 44 88 000	Karaportti 3 02610 Espoo, Finland
 130114210002	Samsung		contact@samsung.com	+31 088-9090100		129 Samsung-ro, Yeongtong-gu 443-742. Suwon South Korea
 130114210003	Asus		contact@asus.com	+31-(0)-591-570290	ASUS Computer International 800 Corporate Way Fremont, CA 94539
-130114210004	Acer		contact@Acer.com	073 645 9645		Europalaan 89, 5232 BC 's-Hertogenbosch
+130114210004	Acer		contact@acer.com	073 645 9645		Europalaan 89, 5232 BC 's-Hertogenbosch
 130114210005	Medion		contact@medion.com	0900 2352534		John F. Kennedylaan 16A, 5981 XC Panningen
+130114210006	LG		contact@lg.com	
+130114210007	Sony		contact@sony.com
+130114210008	Apple		contact@apple.com	
 
 Users
 TIJD VOOR SEXISME: GESLACHT
@@ -50,28 +53,45 @@ p r o d id	name					price	amount_available	amount_total	max_sell	Description (op
 	Of je nu werkt of video's kijkt met vrienden, de Acer One 10 heeft er een modus voor. Je kunt kiezen uit vier verschillende modi - de notebookmodus voor typen, de padmodus touchbediening en de tent- en weergavemodus voor entertainment.
 1618150400008	Samsung Evo+ 64 GB Micro SD class 10	€29,-	30			38		6							/1618150400008/p1			130114210002
 	Samsungs EVO Plus Micro-SD kaart heeft meer geheugenruimte en is geschikt voor een groter aantal verschillende apparaten, dus kan je je richten op het leven, niet op de technologie. Deze kaart is compatibel met UHS-I Speed Class 1 (U1) en Class 10 - perfect voor opnemen en weergeven van foto's en Full HD video. Dankzij de hoge snelheid - tot 80 MB/s lezen en 20 MB/s schrijven - worden foto's en video's sneller geladen en bestanden sneller gekopieerd.
-1618150400009
-	Leg je waardevolle momenten vast. Deze Ultra High Speed geheugenkaart valt in de categorie UHS-1, en slaat foto's en video's dus vier keer zo snel op als een doorsnee SD-kaart.
-1618150400010
-1618150400011
+1618150400009	Sony PlayStation 4 Wireless 		
+		Dualshock 4 V2 Controller		€59,-	8			9		4							/1618150400009/p1			130114210007
+	De DualShock 4 controller beschikt over nieuwe verbeteringen voor de meest meeslepende game-ervaringen, inclusief een supergevoelige six-axis-sensor en een touchpad bovenop de controller dat een compleet nieuwe manier van gamen biedt. Met de nieuwe SHARE-toets kun je video's streamen en delen met slechts een druk op de knop. 
+1618150400010	LG 32LH530V				€299,-	4			4		2							/1618150400010/p1			130114210006
+	De LG 32LH530V is een prachtige tv van 32 inch (81 cm) groot. Deze Full HD heeft een beeldverversing snelheid van 60 hertz waardoor het kijken van een sportwedstrijd of actie film lekker vloeiend gaat. 
+1618150400011	Sony PlayStation 4 Console - 500GB	€359	1			1		1							/1618150400011/p1			130114210007
+	Het PlayStation®4-systeem opent de deur naar een ongelooflijke reis door meeslepende nieuwe gamewerelden en een sterk verbonden game-community. PS4 zet gamers op de eerste plaats met een verbazingwekkende lanceringsline-up en meer dan 180 games in ontwikkeling. Speel fantastische eersteklas kaskrakers en vernieuwende indiehits op PS4. Door ontwikkelaars, voor gamers.
 1618150400012	Samsung Evo 32 GB Micro SD class 10	€19,-	35			40		7							/1618150400012/p1			130114210002
-1618150400013
-1618150400014
-1618150400015
+	Leg je waardevolle momenten vast. Deze Ultra High Speed geheugenkaart valt in de categorie UHS-1, en slaat foto's en video's dus vier keer zo snel op als een doorsnee SD-kaart.
+1618150400013	LG SWH1					€99,-	2			2		2							/1618150400013/p1			130114210006
+	De LG SHW1 ziet er prachtig uit en door het mooie design zal deze uitstekend bij je tv staan. En wat is er fijner dan een lekker vol geluid dat uit een mooie speaker komt? Het is mogelijk om de bass harder en zachter in te stellen. Zo krijg je het gevoel of je in een bioscoop zit! 
+1618150400014	Asus R556DG-DM151T - Laptop		€429	5			6		2							/1618150400014/p1			130114210003
+	De Asus R556DG-laptop is voorzien van een snelle AMD A10 processor, een AMD Radeon R5 M330 videokaart en een harde schijf van 1000 GB. Het maakt deze laptop ook interessant voor de hobbymatige foto- en videobewerker. Het 15,6 formaat maakt deze laptop nog steeds geschikt voor mobiel gebruik. Daarnaast beschikt deze laptop over een mat Full HD beeldscherm, voor een scherpe weergave van foto's en video's. Omgevingslicht is niet van invloed op de zichtbaarheid van het scherm, zodat je deze laptop overal kunt gebruiken.
+1618150400015	Acer G246HLFbid - Gaming Monitor	€159	4			6		2							/1618150400015/p1			130114210004
+	De Acer G246HLFbid gaming monitor heeft een 24 inch Full HD beeldscherm met een reactietijd van slechts 1 ms, daarnaast heeft de monitor de mogelijkheid om een desktop, laptop of console aan te sluiten via de VGA-, DVI- en HDMI-poorten. De monitor beschikt over een X-vormige poot met rode accenten en een slank profie. De Acer G246HLFbid biedt gegarandeerd vele uren gameplezier.
 1618150400016	Nokia Lumia 630 - Zwart			€199,-	4			9		2							/1618150400016/p1			130114210001
 	De Nokia Lumia 630 is de razendsnelle Windows Phone door de ingebouwde Quad Core-processor. Met het 4.5 inch scherm biedt de Lumia 630 je een superieure ervaring voor een betaalbare prijs. 	
-1618150400017
-1618150400018
-1618150400019
-1618150400020
-1618150400021	Samsung Galaxy Tab A (2016) - Zwart	€239,-	3			3		3							/1618150400016/p1			130114210002
+1618150400017	Horizon: Zero Dawn - PS4		€59,-	6			7		2							/1618150400017/p1			130114210007
+	De aarde is niet meer van ons: In een tijdperk waarin Machines vrij rondlopen en de mensheid niet langer boven aan de voedselketen staat, gaat de jonge jager Aloy op zoek naar haar lotsbestemming. Een verre toekomst. Het volgende tijdperk van de mensheid: In een weelderige, post-apocalyptische wereld waar de natuur de ruines van een vergeten beschaving heeft overwoekerd, leven kleine groepjes mensen in primitieve jager-verzamelaarsstammen. De Machines zijn nu heer en meester in deze nieuwe wildernis. Niemand weet waar deze angstaanjagende mechanische wezens vandaan komen.
+1618150400018	Samsung 850 EVO - Interne SSD		€99,-	7			7		3							/1618150400018/p1			130114210002
+	De Samsung 850 EVO 250 GB Solid State Drive is vliegensvlug en geluidloos.
+	Samsungs flashgeheugen wordt vervaardigd volgens een innovatieve 3D V-NAND-architectuur, waarbij de cellen in 32 lagen boven elkaar liggen. Het resultaat: een hogere dichtheid en betere prestaties bij een kleiner formaat. Er wordt korte metten gemaakt met de dichtheidslimieten van de conventionele vlakke NAND-architectuur.
+1618150400019	Acer Draadloze Muis - Wit		€59,-	7			8		3							/1618150400019/p1			130114210004
+	Muizen, toetsenborden en styluspennen van Acer bieden maximale precisie en optimaal comfort bij al uw werkzaamheden. De muizen en toetsenborden bieden draadloze functionaliteit en met de stylus kunt u moeiteloos op jouw smartphone of tablet schrijven.
+1618150400020	Apple Wired Keyboard MB110N/B - qwerty	€59,-	6			8		2							/1618150400020/p1			130114210008
+	Het aluminium, witte Apple toetsenbord dat niet mag ontbreken bij je iMac. Het Apple Keyboard met numeriek toetsenblok is voorzien van een elegante, ultradunne behuizing van geanodiseerd aluminium met platte toetsen die direct de gewenste actie uitvoeren. Tevens biedt het met één toetsaanslag toegang tot diverse functies voor de Mac, zoals helderheid van het scherm, volume, cd's en dvd's uitwerpen, afspelen/pauzeren, vooruit- en terugspoelen, Mission Control en Launchpad.
+1618150400021	Samsung Galaxy Tab A (2016) - Zwart	€239,-	3			3		3							/1618150400021/p1			130114210002
 	De Samsung Galaxy Tab A (2016) is de opvolger van de Tab 4. De schermverhouding is net iets anders, de camera's zijn iets beter en de software heeft een update gekregen.
-1618150400022
-1618150400023
+1618150400022	Apple EarPods - In-ear oordopjes - Wit	€19,-	17			21		3							/1618150400022/p1			130114210008
+	Deze originele Apple oordopjes zijn speciaal ontworpen en vormgegeven door Apple voor een optimale pasvorm in het oor. Ze zijn gebasseerd op de geometrie van het oor. Hierdoor blijven ze heel goed in je oren zitten en zijn ze voor veel mensen een stuk comfortabeler. De speakers in de oordopjes zijn ontworden voor minimaal geluidsverlies en maximale geluidsuitvoer. De oordopjes geven een krachtig geluid met geweldige kwaliteit die je ook vind bij veel duurdere koptelefoons. 
+1618150400023	Sony MDR-XB950BT - Draadloze eXtra 
+		Bass over-ear koptelefoon - Zwart	€129	11			11		2							/1618150400023/p1			130114210007
+	Jouw hart gaat sneller kloppen van de stevige bastonen van de Sony MDR-XB950BT koptelefoon. Krachtige 40-mm neodymium drivers zorgen samen met gecontroleerde beatrespons en een Electro Bass Booster voor sensationele beats en een levensecht clubgeluid. Bij de Sony MDR-XB950BT staat de intense beleving van je muziek altijd voorop. Door de ingebouwde Bluetooth- en NFC technologie heb je nooit meer last van snoeren die in de weg zitten terwijl je danst op jouw favoriete nummers.
 1618150400024
 1618150400025
-1618150400026
+1618150400026	Samsung UE32K4100			€199,-	5			5		2							/1618150400026/p1			130114210002
+	De Samsung UE32K4100 is een strakke tv met HD beeldkwaliteit. Dankzij de Wide Colour Enhancer techniek heeft het beeld ongelofelijk veel detail en mooie kleuren. De tv heeft 2 HDMI aansluitingen. Hierdoor kun je makkelijk films, foto’s of muziek afspelen van andere apparaten zoals een laptop of harde schijf. De Samsung UE32K4100 heeft ingebouwde tuners waardoor je digitale televisie kan kijken zonder een extra kastje of afstandsbediening.
 1618150400027
 1618150400028
 1618150400029
 1618150400030
+
