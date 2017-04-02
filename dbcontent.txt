@@ -46,12 +46,15 @@ p r o d id	name					price	amount_available	amount_total	max_sell	Description (op
 	Ben je op zoek naar gewone telefoon om mee te kunnen bellen en verder geen poespas? Deze Nokia 105 doet dan precies waar jij een telefoon voor wilt gebruiken.
 1618150400006	Nokia 130 Dual SIM 1.8" 67.9g Zwart	€59,-	7			7		3							/1618150400006/p1			130114210001
 	De Nokia 130 is een simpele en goedkope mobiele telefoon zonder fratsen. Zoek je een voordelig mobieltje waarmee je vooral wil bellen en sms'en, dan zit je goed bij deze Nokia. De 130 biedt het gemak van een mobiele telefoon voor een absoluut bodemprijsje.
-1618150400007
-1618150400008
+1618150400007	Acer One 10 S1003-14XA - Laptop Tablet	€229,-	6			8		2							/1618150400007/p1			130114210004
+	Of je nu werkt of video's kijkt met vrienden, de Acer One 10 heeft er een modus voor. Je kunt kiezen uit vier verschillende modi - de notebookmodus voor typen, de padmodus touchbediening en de tent- en weergavemodus voor entertainment.
+1618150400008	Samsung Evo+ 64 GB Micro SD class 10	€29,-	30			38		6							/1618150400008/p1			130114210002
+	Samsungs EVO Plus Micro-SD kaart heeft meer geheugenruimte en is geschikt voor een groter aantal verschillende apparaten, dus kan je je richten op het leven, niet op de technologie. Deze kaart is compatibel met UHS-I Speed Class 1 (U1) en Class 10 - perfect voor opnemen en weergeven van foto's en Full HD video. Dankzij de hoge snelheid - tot 80 MB/s lezen en 20 MB/s schrijven - worden foto's en video's sneller geladen en bestanden sneller gekopieerd.
 1618150400009
+	Leg je waardevolle momenten vast. Deze Ultra High Speed geheugenkaart valt in de categorie UHS-1, en slaat foto's en video's dus vier keer zo snel op als een doorsnee SD-kaart.
 1618150400010
 1618150400011
-1618150400012
+1618150400012	Samsung Evo 32 GB Micro SD class 10	€19,-	35			40		7							/1618150400012/p1			130114210002
 1618150400013
 1618150400014
 1618150400015
@@ -61,7 +64,8 @@ p r o d id	name					price	amount_available	amount_total	max_sell	Description (op
 1618150400018
 1618150400019
 1618150400020
-1618150400021
+1618150400021	Samsung Galaxy Tab A (2016) - Zwart	€239,-	3			3		3							/1618150400016/p1			130114210002
+	De Samsung Galaxy Tab A (2016) is de opvolger van de Tab 4. De schermverhouding is net iets anders, de camera's zijn iets beter en de software heeft een update gekregen.
 1618150400022
 1618150400023
 1618150400024
