@@ -1,0 +1,73 @@
+Manufacturers
+m a n u id	name		e-mail			phone			address (SPELLING AANPASSEN IN DB)
+130114210001	Nokia		contact@nokia.com	+358 10 44 88 000	Karaportti 3 02610 Espoo, Finland
+130114210002	Samsung		contact@samsung.com	+31 088-9090100		129 Samsung-ro, Yeongtong-gu 443-742. Suwon South Korea
+130114210003	Asus		contact@asus.com	+31-(0)-591-570290	ASUS Computer International 800 Corporate Way Fremont, CA 94539
+130114210004	Acer		contact@Acer.com	073 645 9645		Europalaan 89, 5232 BC 's-Hertogenbosch
+130114210005	Medion		contact@medion.com	0900 2352534		John F. Kennedylaan 16A, 5981 XC Panningen
+
+Users
+TIJD VOOR SEXISME: GESLACHT
+u s e r id	firstname	lastname		address (SPELLING)		e-mail				password
+2119051800001	John		de Groot		Veemarktstraat 16 Rotterdam	jdegroot86@hotmail.com		John1986!
+2119051800002	Alex		Schutjens		Leidseweg 73 Utrecht		lexiepex99@outlook.nl		1234QWer
+2119051800003	Jan Metde	Korteachternaam		Janstraat 93 Utrecht		janlul1990@lullos.com		JmdKA101
+2119051800004	Julia		Franssen		
+2119051800005	Maria		de Vries		Schoepenweg 25 Lelystad		Maria88@devries.nl
+2119051800006	Fritz		Hinter			Statensingel 46 Rotterdam	fritshinter12@gmail.com		eJoq39%eri(0
+2119051800007	Noa		van der Merwe		
+2119051800008	Z.G.		Munters			Hoofdweg 10 Lijnden		Zgmunters@live.nl		MunZG1091
+2119051800009	John		Franssen		Springweg 178			mfranssen@live.nl		BisJ63%
+2119051800010	Maarten		Achterberg		Kerkstraat 16 Amsterdam
+
+
+Sellers
+u s e r id
+2119051800010
+2119051800007
+2119051800004
+2119051800001
+2119051800010
+
+
+products
+MOET ER NIET EEN REFERENTIE NAAR CATEGORIE? MISSCHIEN DESCRIPTION INLADEN VAN TEXTBESTAND? moet max_sell ook automatisch worden aangepast?
+p r o d id	name					price	amount_available	amount_total	max_sell	Description (op volgende regel)		image (MEERDERE?)			manufacture_id
+1618150400001	Samsung Galaxy S7 32GB Zwart		€449,-	13			15		3							/1618150400001/p1			130114210002
+	De Samsung Galaxy S7 komt met een 5.1 inch scherm. De Samsung Galaxy S7 beschikt over een superieure camera waarmee je perfecte foto’s kan maken, zelfs bij weinig licht! De Samsung Galaxy S7 heeft een Dual Pixel voor een snellere autofocus, zodat je scherpe en heldere foto’s kunt nemen. De grotere pixels (1.4um) en speciale lens (F1.7) zorgen er voor dat je (zelfs) bij weinig licht heldere foto’s kunt maken. 		
+1618150400002	Samsung Alaxy A3 (2016) zwart		€199,-	3			3		3							/1618150400002/p1			130114210002
+	De Samsung Galaxy A3 2016 is een smartphone die stijl en gebruiksgemak samenbrengt. Met een 4.7 inch HD scherm ziet alles er prachtig uit, en worden afbeeldingen rijker. Camera: Deze nieuwe versie van de Samsung Galaxy A3 biedt een scherpe, kwalitatieve 13 megapixel camera aan de achterkant, om foto's met hoge kwaliteit te nemen. Door de 5 megapixel camera aan de voorkant zijn ook je selfies in perfect kwaliteit.
+1618150400003	Asus Zenfone Go - 16 GB - Zwart		€149,-	7			9		3							/1618150400003/p1			130114210003
+	De Asus Zenfone Go onderscheidt zich ten opzichte van andere smartphones door de camera. Stel je foto’s scherp in slechts 0,03 seconden, maak zelfs mooie foto’s met weinig licht en leg jouw momenten levensecht vast door de 13 Megapixel camera met de nieuwste Sony IMX298-sensor.
+	Het heldere en grote 5 inch scherm zorgt ervoor dat je niets hoeft te missen op social media en je foto’s en video’s met super kwaliteit kunt bekijken.
+1618150400004	Asus Zenfone 3 - 32 GB - Wit		€349,-	1			1		1							/1618150400004/p1			130114210003
+	De uitmuntende camera en het flexibele en mooie ontwerp van de Asus Zenfone 3 maakt de Zenfone 3 een buitengewone smartphone voor een minder gewoon leven!
+1618150400005	Nokia 105 - Zwart			€39,-	4			6		3							/1618150400005/p1			130114210001
+	Ben je op zoek naar gewone telefoon om mee te kunnen bellen en verder geen poespas? Deze Nokia 105 doet dan precies waar jij een telefoon voor wilt gebruiken.
+1618150400006	Nokia 130 Dual SIM 1.8" 67.9g Zwart	€59,-	7			7		3							/1618150400006/p1			130114210001
+	De Nokia 130 is een simpele en goedkope mobiele telefoon zonder fratsen. Zoek je een voordelig mobieltje waarmee je vooral wil bellen en sms'en, dan zit je goed bij deze Nokia. De 130 biedt het gemak van een mobiele telefoon voor een absoluut bodemprijsje.
+1618150400007
+1618150400008
+1618150400009
+1618150400010
+1618150400011
+1618150400012
+1618150400013
+1618150400014
+1618150400015
+1618150400016	Nokia Lumia 630 - Zwart			€199,-	4			9		2							/1618150400016/p1			130114210001
+	De Nokia Lumia 630 is de razendsnelle Windows Phone door de ingebouwde Quad Core-processor. Met het 4.5 inch scherm biedt de Lumia 630 je een superieure ervaring voor een betaalbare prijs. 	
+1618150400017
+1618150400018
+1618150400019
+1618150400020
+1618150400021
+1618150400022
+1618150400023
+1618150400024
+1618150400025
+1618150400026
+1618150400027
+1618150400028
+1618150400029
+1618150400030
