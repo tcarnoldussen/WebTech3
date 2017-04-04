@@ -11,17 +11,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/jquery.cookie.js"></script>
-	<script type="text/javascript" src="js/global.script.js"></script>
 </head>
 <body contextmenu="context_menu">
         <header>
 		<div id="header_inner">
 			<nav>
 				<a href="index.html">Home</a>
-				<a href="destinations.html">Registreren</a>
-				<a href="about.html">Inloggen</a>
-				<a href="discover.html" class="cart_btn">2 products</a>
+				<a href="register.html" class="current">Registreren</a>
+				<a href="login.html">Inloggen</a>
+				<a href="cart.html" class="cart_btn">2 products</a>
 			</nav>
 			<a href="index.html">
 				<img id="logo" src="img/logo.png" alt="Logo" title="Logo" />
@@ -31,48 +29,70 @@
         <main>
 		<section id="content_product">
 			<table class="product">
-				<div class="product_head">
-					<a class="product_add" href="#buylink">add to</a>
-					<h1 class="product_title">Laptop 13"</h1>
-					<h2 class="product_description_short">8GB RAM memory, one year warranty</h2>
-					<h3 class="product_price">€599,-</h3>	
-				</div>
-				<div class="product_body">			
-					<div class="product_description">More information about this prod...</div>
-					<div class="product_details">Detailed information</div>
-				</div>
-				<div class="product_showcase">
-					<figure class="product_image">
-						<img src="/img/product/209720.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</div>
+				<tr>
+					<td class="product_head">
+						<a class="product_add" href="#buylink">add to</a>
+						<h1 class="product_title">Laptop 13"</h1>
+						<h2 class="product_description_short">8GB RAM memory, one year warranty</h2>
+						<h3 class="product_price">€599,-</h3>	
+					</td>
+					<td class="product_showcase" rowspan="2">
+						<figure class="product_image">
+							<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
+						</figure>
+					</td>
+				</tr>
+				<tr>
+					<td class="product_body">			
+						<div class="product_description">
+Beeldscherm: 14 inch (1920 x 1080)<br />
+Processor: Intel Core i5-7200U<br />
+Werkgeheugen: 4 GB<br />
+Opslag: 128 GB SSD<br />
+Grafische kaart: Intel HD Graphics 620
+<br /><br />
+De Asus ZenBook UX410UA-GV010T is een echte all-rounder. Snel informatie opzoeken op het internet of de vakantiefoto's bewerken is geen enkel probleem. De Intel Core i5-processor, in combinatie met een Intel HD Graphics 620-videokaart, zorgt voor vloeiende prestaties. Op de ingebouwde 128 GB SSD is genoeg ruimte voor al je persoonlijke bestanden. De Asus ZenBook UX410UA-GV010T beschikt verder over USB 3.1 voor het snel overzetten van data naar een externe harde schijf of USB-stick. Dankzij de instant hervatten-functie hoef je nooit lang te wachten en kun je vanuit slaapstand in 2 seconden verder werken.
+					</td>
+				</tr>
 			</table>
 		</section>
 	</main>
 	<footer>
 		<table>
 			<tr>
-				<td>
-					&copy; 2017 Asian Adventures
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
 				</td>
-				<td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_social">
 					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
 					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
 					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+					<br /><br />&copy; 2017 Asian Adventures
 				</td>
 			</tr>
 		</table>
 	</footer>
-	<menu type="context" id="context_menu">
-		<menuitem label="Toggle Bold" class="boldtrigger"></menuitem>
-		<menuitem label="Toggle Italic" class="italictrigger"></menuitem>
-		<menu label="Change Color Theme to:">
-			<menuitem label="Default (Grey)" class="colortrigger_default"></menuitem>
-			<menuitem label="Green" class="colortrigger_green"></menuitem>
-			<menuitem label="Red" class="colortrigger_red"></menuitem>
-			<menuitem label="Blue" class="colortrigger_blue"></menuitem>
-		</menu>
-	</menu>
-	<script type="text/javascript" src="js/comment.script.js"></script>
+	<script type="text/javascript" src="js/addtocart.js"></script>
 </body>
 </html>
