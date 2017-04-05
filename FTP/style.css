@@ -93,8 +93,8 @@ transition: 0.5s;
 }
 #logo {
 float: left;
-height: 30px;
-width: 229px;
+height: 50px;
+width: 240px;
 margin: 10px 0;
 }
 .cart_btn {
@@ -298,4 +298,34 @@ float: right;
 .item_added, .product_added {
 background-color: #797979;
 transition: 0.5s;
+}
+
+#cart {
+max-width: 900px;
+margin: 20px auto;
+background-color: #FFFFFF;
+}
+.cart_item {
+border-bottom: 10px solid #ECECEC;
+}
+.cart_item_amount, .cart_item_remove {
+width: 50px;
+}
+.cart_item_image {
+width:150px;
+}
+.cart_item_image figure, .cart_item_image figure img {
+width:150px;
+height:auto;
+}
+.item_title {
+text-decoration: none;
+font-size: 22px;
+color: #353535;
+text-align: left;
+}
+.item_description {
+font-size: 15px;
+color: #CFCFCF;
+text-align: left;
 }

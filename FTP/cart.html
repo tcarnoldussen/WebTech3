@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Webshop</title>
+	<title>Cart</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Your personal advisor for adventurous travel experiences in Asia.">
 	<meta name="keywords" content="AsianAdventures, traveling, travel agency, Asia, travel, trip, adventure">
@@ -27,124 +27,61 @@
 		</div>
 	</header>
         <main>
-		<section id="content_items">
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product.html#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
-			<div class="item" id="product209720">
-				<a href="product#209720">
-					<figure class="item_image">
-						<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-					</figure>
-				</a>
-				<div class="item_info">
-					<a class="item_title" href="product#209720">Laptop</a>
-					<div class="item_description">More information about this prod...</div>
-					<div class="item_price">€599,-</div>				
-					<a class="item_add" href="#buylink">add to</a>
-				</div>
-			</div>
+		<section id="content_cart">
+			<table id="cart">
+				<tr class="cart_item">
+					<td class="cart_item_amount">
+						<select>
+							<option value="1">1x</option>
+							<option value="2">2x</option>
+							<option value="3">3x</option>
+							<option value="4">4x</option>
+							<option value="5">5x</option>
+							<option value="6">6x</option>
+							<option value="7">7x</option>
+						</select>
+					</td>
+					<td class="cart_item_image">
+						<figure>
+							<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
+						</figure>
+					</td>
+					<td class="cart_item_info">
+						<a class="item_title" href="product.html#209720">Laptop</a>
+						<p class="item_description">More information about this prod...</p>
+						<p class="item_price">€599,-</p>	
+					</td>
+					<td class="cart_item_remove">
+						<div class="item_remove_btn">X</div>
+					</td>
+				</tr>
+				<tr class="cart_item">
+					<td class="cart_item_amount">
+						<select>
+							<option value="1">1x</option>
+							<option value="2">2x</option>
+							<option value="3">3x</option>
+							<option value="4">4x</option>
+							<option value="5">5x</option>
+							<option value="6">6x</option>
+							<option value="7">7x</option>
+						</select>
+					</td>
+					<td class="cart_item_image">
+						<figure>
+							<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
+						</figure>
+					</td>
+					<td class="cart_item_info">
+						<a class="item_title" href="product.html#209720">Laptop</a>
+						<p class="item_description">More information about this prod...</p>
+						<p class="item_price">€599,-</p>	
+					</td>
+					<td class="cart_item_remove">
+						<div class="item_remove_btn">X</div>
+					</td>
+				</tr>
+			</table>
 		</section>
 	</main>
 	<footer>
