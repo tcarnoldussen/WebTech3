@@ -1,0 +1,104 @@
+CREATE TABLE Users(
+user_id		integer		not null,
+firstname	varchar(100)	not null,
+lastname	varchar(100)	not null,
+adress		varchar(100)	not null,
+mail		varchar(100)	not null,
+password	varchar(25)	not null,
+CONSTRAINT Users_pk PRIMARY KEY (user_id)
+);
+
+CREATE TABLE Sellers(
+user_id		integer		not null,
+CONSTRAINT Sellers_pk PRIMARY KEY (user_id),
+CONSTRAINT Sellers_fk FOREIGN KEY (user_id)
+	REFERENCES Users(user_id)
+);
+
+CREATE TABLE Buyers(
+user_id		integer		not null,
+CONSTRAINT Buyers_pk PRIMARY KEY (user_id),
+CONSTRAINT Buyers_fk FOREIGN KEY (user_id)
+	REFERENCES Users(user_id)
+);
+
+CREATE TABLE Manufacturer(
+manufacturer_id		integer		not null,
+name			varchar(100)	not null,
+mail			varchar(100),
+phone			integer,
+adress			varchar(100),
+CONSTRAINT Manufacturer_pk PRIMARY KEY (manufacturer_id)
+);
+
+CREATE TABLE Products(
+product_id		integer		not null,
+name			varchar(100)	not null,
+price			float		not null,
+amount_available	integer		not null,
+amount_total		integer		not null,
+max_sell		integer		not null,
+description		varchar(300)	not null,
+image			varchar(250)	not null,
+--image is reference to directory on server
+manufacturer_id		integer		not null,
+CONSTRAINT Products_pk PRIMARY KEY (product_id),
+CONSTRAINT Products_fk1 FOREIGN KEY (manufacturer_id)
+	REFERENCES Manufacturer(manufacturer_id)
+);
+
+CREATE TABLE Sells(
+seller_id 	integer		not null,
+product_id	integer		not null,
+CONSTRAINT Sells_pk PRIMARY KEY (seller_id, product_id),
+CONSTRAINT Sells_fk1 FOREIGN KEY (seller_id)
+	REFERENCES Sellers(seller_id),
+CONSTRAINT Sells_fk2 FOREIGN KEY (product_id)
+	REFERENCES Products(product_id)
+);
+
+CREATE TABLE Transactions(
+transaction_id	integer		not null,
+user_id		integer		not null,
+datestamp	date		not null,
+timestamp	time		not null,
+CONSTRAINT Transactions_pk PRIMARY KEY (transaction_id),
+CONSTRAINT Transactions_fk FOREIGN KEY (user_id)
+	REFERENCES Users(user_id)
+);
+
+CREATE TABLE TransactionItems(
+transaction_id	integer		not null,
+cart_id		integer		not null,
+CONSTRAINT TransactionItems_pk PRIMARY KEY (transaction_id, cart_id),
+CONSTRAINT TransactionItems_fk1 FOREIGN KEY (transaction_id)
+	REFERENCES Transactions (transaction_id),
+CONSTRAINT TransactionItems_fk2 FOREIGN KEY (cart_id)
+	REFERENCES ShoppingCart(cart_id)
+);
+
+CREATE TABLE Categories(
+category_id	integer		not null,
+name		varchar(50)	not null,
+CONSTRAINT Categories_pk PRIMARY KEY (category_id)
+);
+
+CREATE TABLE ProdBelongsTo(
+product_id	integer		not null,
+category_id	integer		not null,
+CONSTRAINT ProdBelongsTo_pk PRIMARY KEY (product_id, category_id),
+CONSTRAINT ProdBelongsTo_fk1 FOREIGN KEY (product_id)
+	REFERENCES Products(product_id),
+CONSTRAINT BelongsTo_fk2 FOREIGN KEY (category_id)
+	REFERENCES Categories(category_id)
+);
+
+CREATE TABLE CatBelongsTo(
+subcategory_id	integer		not null,
+maincategory_id	integer		not null,
+CONSTRAINT CatBelongsTo_pk PRIMARY KEY (subcategory_id, maincategory_id),
+CONSTRAINT CatBelongsTo_fk1 FOREIGN KEY (subcategory_id)
+	REFERENCES Categories(category_id),
+CONSTRAINT CatBelongsTo_fk2 FOREIGN KEY (maincategory_id)
+	REFERENCES Categories(category_id)
+);
