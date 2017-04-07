@@ -1,9 +1,18 @@
 var sqlite3 = require('sqlite3').verbose();
-var file = "webshopdb.db";
-var db = new sqlite3.Database(file);
-db.all("SELECT * FROM Users", function(err, rows) {
-        rows.forEach(function (row) {
-            console.log(row.firstname, row.lastname);
-        })
-	});	
+var db = new sqlite3.Database('webshopdb.db');
+ 
+db.serialize(function() {
+  db.run("CREATE TABLE lorem (info TEXT)");
+ 
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i < 10; i++) {
+      stmt.run("Ipsum " + i);
+  }
+  stmt.finalize();
+ 
+  db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
+  });
+});
+ 
 db.close();
