@@ -12,6 +12,7 @@ var port = 8094; // Change to 8094 for actual server
 
 // Create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyparser.urlencoded({ extended: false })
+app.use(bodyparser.urlencoded({ extended: false }));
 // Validator
 app.use(expressvalidator());
 // HTML and CSS Files
