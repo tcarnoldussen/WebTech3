@@ -1,0 +1,97 @@
+<head>
+	<title>Registration</title>
+	<meta charset= "UTF-8">
+	<meta name="description" content= "Shopping..">
+	<meta name="keywords" content="buying, selling, shopping, Shop">
+	<meta name="author" content="Authors....">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<div id="header_inner">
+			<a href="index.html">
+				<img id="logo" src="img/logo.png" alt="Shop name.." title="Shop name..." />
+			</a>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="log_in.html">Log in</a>
+				<a href="registration.html" class="current">Registrate now</a>
+			</nav>
+		</div>
+	</header>
+    <main>
+		<section id="content_destinations">
+			<h1>Registration Form</h1>
+			<div id="error_display_registration"> Make sure you have filled all requirements. The e-mail must be a valid e-mail adress. The email you used may be already in use.</div>
+			<form action="/register_post" id="registration_form" method="post">
+			<fieldset class="form_box white_bg">
+				<div id="genderchoice">
+					<h4>Gender</h4><br>
+					<label for="male">
+						<input type="radio" name="gender" id="male" value="male"> Male
+					</label>
+					<label for="female">
+						<input type="radio" name="gender" id="female" value="female">Female
+					</label>
+				</div>
+				<div id="countrychoice">
+					<h4>Country</h4>
+					<select name="country" size="4">
+						<option value="netherlands">Netherlands</option>
+						<option value="belgium">Belgium</option>
+						<option value="uk">UK</option>
+						<option value="germany">Germany</option>
+					</select>
+				</div> 
+				<div id="firstname" class="form-row">
+					<input type="text" name="first_name" placeholder="First Name">
+				</div>
+				<div id="lastname" class="form-row">
+					<input type="text" name="last_name" placeholder="Last Name">
+				</div>
+				<div id="streetname" class="form-row">
+					<input type="text" name="street_name" placeholder="Street Name">
+				</div>
+				<div id="streetnumber" class="form-row">
+					<input type="text" name="street_number" placeholder="Street Number">
+				</div>
+				<div id="city" class="form-row">
+					<input type="text" name="city" placeholder="City">
+				</div>
+				<div id="telephonenumber" class="form-row">
+					<input type="text" name="telephone_number" placeholder="Telephone Number">
+				</div>
+				<div id="username" class="form-row">
+					<input type="text" name="user_name" placeholder="Enter an user name">
+				</div>
+				<div id="emailadress" class="form-row">
+					<input type="text" name="registration_emailadress" placeholder="E-mail Adress">
+				</div>
+				<div id="pass" class="form-row">
+					<input type="text" name="pass" placeholder="Password">
+				</div>
+				<div id="re_pass" class="form-row">
+					<input type="text" name="re_password" placeholder="Re-enter your password">
+				</div>
+				<input type="submit" value="Confirm">
+			</fieldset>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<table>
+			<tr>
+				<td>
+					&copy; 2017 MediaManiacs
+				</td>
+				<td>
+					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
+					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
+					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+</body>
+</html>

@@ -3,8 +3,8 @@ var app     = express();
 var morgan = require("morgan");
 var path    = require("path");
 var bodyparser = require("body-parser")
-var expressvalidator = require('express-validator');
-var sqlite3 = require('sqlite3').verbose();
+var expressvalidator = require("express-validator");
+var sqlite3 = require("sqlite3").verbose();
 var file = "webshopdb.db";
 var db = new sqlite3.Database(file);
 
@@ -50,7 +50,7 @@ app.post('/register_post', urlencodedParser, function (req, res) {
 	  req.body.registration_emailadress,
 	  req.body.pass ];
 	console.log(user);
-	res.end(JSON.stringify(user));
+//	res.end(JSON.stringify(user));
    
    // Validation checks
    req.checkBody("first_name", "A first name is required.").notEmpty();
@@ -63,43 +63,43 @@ app.post('/register_post', urlencodedParser, function (req, res) {
    
    var errors = req.validationErrors();
    
+   // if validation errors, send error page.
    if (errors) {
 	   console.log(errors);
-	   
+	   res.sendFile(path.join(__dirname + "/public/registration_errors.html"));
    }
-/*    else {
-	  console.log("No errors!")
-	  	// Everything in table needs to be filled out. Needs unique ID.
-		db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
-   } */
-   
-	// Checker if email already exists in database
-   db.all("SELECT mail FROM Users", function(err, rows) {
-		var all_mails = [];
-		all_mails = rows;
-	   	console.log(all_mails);
-	   	console.log(user[4]);
+   else 
+   {
+		console.log("No body errors!")
+		// Checker if email already exists in database and if it doesn't, registrates.
+		db.all("SELECT mail FROM Users", function(err, rows) {
+			var all_mails = [];
+			all_mails = rows;
 		
-		// Checks if email already exists and breaks if found
-		var email_exist = false;
-		for(var i = 0; i < all_mails.length; i++) {
-			if (all_mails[i].mail == user[4]) {
-				email_exist = true;
-				break;
+			// Checks if email already exists and breaks if found
+			var email_exist = false;
+			for(var i = 0; i < all_mails.length; i++) {
+				if (all_mails[i].mail == user[4]) {
+					email_exist = true;
+					break;
+				}
 			}
-		}
-
-		if (email_exist == true)
-		{
-			console.log("ALREADY EXISTS!");
-		}
-		else
-		{
-			// Everything in table needs to be filled out. Needs unique ID.
-			db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
-			console.log("New Registration");
-		}
-   });
+			// if email already exist, send error page.
+			if (email_exist == true)
+			{
+				console.log("ALREADY EXISTS!");
+				res.sendFile(path.join(__dirname + "/public/registration_errors.html"));
+			}
+			else
+			{
+				// Everything in table needs to be filled out. Needs unique ID.
+				db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
+				console.log("New Registration");
+				// Go to Log In Page
+				res.sendFile(path.join(__dirname + "/public/log_in.html"));
+			}
+		});
+   }	
 });
 
 
