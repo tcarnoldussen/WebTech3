@@ -5,6 +5,7 @@ var path    = require("path");
 var bodyparser = require("body-parser")
 var expressvalidator = require("express-validator");
 var sqlite3 = require("sqlite3").verbose();
+var fs = require("fs");
 var file = "webshopdb.db";
 var db = new sqlite3.Database(file);
 
@@ -24,9 +25,8 @@ app.use(morgan("dev"));
 /////////// BEGIN ROUTES /////////
 
 // First page
-app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/public/log_in.html'));
-  //__dirname : It will resolve to your project folder.
+app.get("/",function(req,res){
+  res.sendFile(path.join(__dirname+"/public/log_in.html"));
 });
 
 
@@ -50,7 +50,6 @@ app.post('/register_post', urlencodedParser, function (req, res) {
 	  req.body.registration_emailadress,
 	  req.body.pass ];
 	console.log(user);
-//	res.end(JSON.stringify(user));
    
    // Validation checks
    req.checkBody("first_name", "A first name is required.").notEmpty();
@@ -87,13 +86,14 @@ app.post('/register_post', urlencodedParser, function (req, res) {
 			// if email already exist, send error page.
 			if (email_exist == true)
 			{
-				console.log("ALREADY EXISTS!");
+				console.log("Email already exists.");
 				res.sendFile(path.join(__dirname + "/public/registration_errors.html"));
 			}
 			else
 			{
 				// Everything in table needs to be filled out. Needs unique ID.
 				db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
+				db.run("INSERT INTO BUYERS(user_id) VALUES (?)", user[0])
 				console.log("New Registration");
 				// Go to Log In Page
 				res.sendFile(path.join(__dirname + "/public/log_in.html"));
@@ -102,6 +102,43 @@ app.post('/register_post', urlencodedParser, function (req, res) {
    }	
 });
 
+///////////// LOG IN ///////////
+
+app.post("/log_in.html", function(req, res){
+
+	var mail = req.body.emailadress;
+	var pass = req.body.password;
+
+	if (req.body.emailadress && req.body.password)
+	{
+		db.all("SELECT * FROM Users where (mail IS ?) AND (password IS ?)", mail, pass, function(err, rows)
+		{
+			if (err)
+			{
+				console.log("Error: " + err)
+			}
+			else if (rows = [])
+			{	
+				console.log("Invalid login")
+				res.sendFile(path.join(__dirname + "/public/log_in_errors.html"));
+			}
+			else if (rows != [])
+			{
+				rows.forEach(function (row) 
+				{
+					console.log("Login Succes")
+					res.sendFile(path.join(__dirname + "/public/overview_menu.html"));
+				});
+			}
+		});
+		
+	}
+	else 
+	{
+		console.log("Login fail");
+		res.sendFile(path.join(__dirname + "/public/log_in_errors.html"));
+	}
+});
 
 
 app.listen(port);

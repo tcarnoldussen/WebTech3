@@ -5,7 +5,16 @@
 	<meta name="keywords" content="buying, selling, shopping, Shop">
 	<meta name="author" content="Authors....">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
 <body>
 	<header>
@@ -21,7 +30,7 @@
 		</div>
 	</header>
     <main>
-		<section id="content_destinations">
+		<section id="content_registration">
 			<h1>Registration Form</h1>
 			<div id="error_display_registration"> Make sure you have filled all requirements. The e-mail must be a valid e-mail adress. The email you used may be already in use.</div>
 			<form action="/register_post" id="registration_form" method="post">
@@ -44,34 +53,34 @@
 						<option value="germany">Germany</option>
 					</select>
 				</div> 
-				<div id="firstname" class="form-row">
+				<div id="firstname">
 					<input type="text" name="first_name" placeholder="First Name">
 				</div>
-				<div id="lastname" class="form-row">
+				<div id="lastname">
 					<input type="text" name="last_name" placeholder="Last Name">
 				</div>
-				<div id="streetname" class="form-row">
+				<div id="streetname">
 					<input type="text" name="street_name" placeholder="Street Name">
 				</div>
-				<div id="streetnumber" class="form-row">
+				<div id="streetnumber">
 					<input type="text" name="street_number" placeholder="Street Number">
 				</div>
-				<div id="city" class="form-row">
+				<div id="city">
 					<input type="text" name="city" placeholder="City">
 				</div>
-				<div id="telephonenumber" class="form-row">
+				<div id="telephonenumber">
 					<input type="text" name="telephone_number" placeholder="Telephone Number">
 				</div>
-				<div id="username" class="form-row">
+				<div id="username">
 					<input type="text" name="user_name" placeholder="Enter an user name">
 				</div>
-				<div id="emailadress" class="form-row">
+				<div id="emailadress">
 					<input type="text" name="registration_emailadress" placeholder="E-mail Adress">
 				</div>
-				<div id="pass" class="form-row">
+				<div id="pass">
 					<input type="text" name="pass" placeholder="Password">
 				</div>
-				<div id="re_pass" class="form-row">
+				<div id="re_pass">
 					<input type="text" name="re_password" placeholder="Re-enter your password">
 				</div>
 				<input type="submit" value="Confirm">
@@ -82,13 +91,19 @@
 	<footer>
 		<table>
 			<tr>
-				<td>
-					&copy; 2017 MediaManiacs
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
 				</td>
-				<td>
+				<td class="footer_social">
 					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
 					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
 					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+					<br /><br />&copy; 2017 MediaManiacs
 				</td>
 			</tr>
 		</table>

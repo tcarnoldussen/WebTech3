@@ -7,7 +7,16 @@
 	<meta name="keywords" content="buying, selling, shopping, Shop">
 	<meta name="author" content="Authors....">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
 <body>
 	<header>
@@ -30,7 +39,7 @@
 				<div id="userid">
 					Your user ID<input type="text" id="user_id" placeholder="13743">  
 				</div>
-				<div id="username" class="form-row">
+				<div id="username">
 					User name <input type="text" name="user_name"><br>
 				</div>
 				<div id="genderchoice">
@@ -51,22 +60,22 @@
 						<option value="germany">Germany</option>
 					</select>
 				</div> 
-				<div id="firstname" class="form-row">
+				<div id="firstname" >
 					First name <input type="text" name="first_name">
 				</div>
-				<div id="lastname" class="form-row">
+				<div id="lastname">
 					Last name <input type="text" name="last_name">
 				</div>
-				<div id="streetname" class="form-row">
+				<div id="streetname">
 					Street name <input type="text" name="street_name">
 				</div>
-				<div id="streetnumber" class="form-row">
+				<div id="streetnumber">
 					Street number <input type="text" name="street_number">
 				</div>
-				<div id="city" class="form-row">
+				<div id="city">
 					City <input type="text" name="city">
 				</div>
-				<div id="telephonenumber" class="form-row">
+				<div id="telephonenumber">
 					Telephone Number <input type="text" name="telephone_number">
 				</div>
 				<input type="submit" value="Confirm">
@@ -77,13 +86,19 @@
 	<footer>
 		<table>
 			<tr>
-				<td>
-					&copy; 2017 MediaManiacs
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
 				</td>
-				<td>
+				<td class="footer_social">
 					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
 					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
 					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+					<br /><br />&copy; 2017 MediaManiacs
 				</td>
 			</tr>
 		</table>

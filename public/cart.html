@@ -1,9 +1,10 @@
+<!DOCTYPE html>
+<html>
 <head>
-	<title>My account</title>
-	<meta charset= "UTF-8">
-	<meta name="description" content= "Shopping..">
-	<meta name="keywords" content="buying, selling, shopping, Shop">
-	<meta name="author" content="Authors....">
+	<title>Favorites - MediaManiacs</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Webshop with tech stuff">
+	<meta name="keywords" content="MediaManiacs, webshop, tv, smartphone, shop">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
@@ -17,62 +18,63 @@
 	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
 <body>
-	<header>
+        <header>
 		<div id="header_inner">
 			<a href="index.html">
 				<img id="logo" src="img/logo.png" alt="Logo" title="Logo" />
 			</a>
 			<nav>
-				<a href="index.html">Home</a>
-				<a href="log_in.html">Log in</a>
-				<a href="registration.html">Registrate now</a>
+				<a href="registration.html">register</a>
+				<a href="log_in.html">log in</a>
+				<a href="cart.html" class="fav_btn">favorites</a>
 			</nav>
+			<form action="/search.html" method="get" id="search_form">
+				<input type="text" id="q" name="q" placeholder="I am looking for...">
+				<input type="submit" id="search_btn" value="Search">
+			</form>
 		</div>
 	</header>
-    <main>
-		<section id="content_overview">
-			<h1>Overview menu</h1>
-			<table>
-				<tr>
-					<td>
-						<img id="profile_icon" src="img/icon_overview/profile_icon.png" alt="Profile icon" title="Profile" />
+	<div class="header_placeholder"></div>
+        <main>
+		<section id="content_cart">
+			<table id="cart">
+				<tr class="cart_item" id="prod129345">
+					<td class="cart_item_image">
+						<figure>
+							<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
+						</figure>
 					</td>
-					<td>
-						<img id="order_history" src="img/icon_overview/order_history.png" alt="Order history icon" title="Order history" />
+					<td class="cart_item_info">
+						<a class="item_title" href="product.html#209720">Laptop</a>
+						<p class="item_description">More information about this prod...</p>
+						<p class="item_price">€599,-</p>	
 					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="profile.html">Your Profile</a>
-					</td>
-					<td>
-						<a href="">History Bought/Sold</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img id="order_history" src="img/icon_overview/password.png" alt="Change password icon" title="Change password" />
-					</td>
-					<td>
-						<img id="order_history" src="img/icon_overview/exit.png" alt="Log out icon" title="Log out" />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="">Change Password</a>
-					</td>
-					<td>
-						<a href="">Log out</a>
+					<td class="cart_item_remove">
+						<div class="item_remove_btn">X</div>
 					</td>
 				</tr>
 			</table>
-			<h2>Seller options</h2>
-			<a href="" class="convert_button">Convert your account to a seller account</a>
 		</section>
 	</main>
 	<footer>
 		<table>
 			<tr>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
 				<td class="footer_menu">
 					<ul>
 						<li><a href="#">About us</a></li>
@@ -90,5 +92,7 @@
 			</tr>
 		</table>
 	</footer>
+	<script type="text/javascript" src="js/global.script.js"></script>
+	<script type="text/javascript" src="js/readcart.js"></script>
 </body>
 </html>
