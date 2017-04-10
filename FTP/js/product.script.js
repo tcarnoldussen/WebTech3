@@ -4,6 +4,5 @@ $.urlParam = function(name){
 }
 
 var product_id = $.urlParam("id");
-alert(product_id);
 
 $(".product").attr("id",product_id);
