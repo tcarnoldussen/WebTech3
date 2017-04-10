@@ -27,7 +27,7 @@ app.post("/log_in.html", function(req, res){
 
 	if (req.body.emailadress && req.body.password)
 	{
-		var db = new sqlite3.Database(__dirname + "/webshopdb2.db");
+		var db = new sqlite3.Database(__dirname + "/dbnew.db");
 		db.all("SELECT * FROM Users where (mail IS ?) AND (password IS ?)", mail, pass, function(err, rows)
 		{
 			db.close();
