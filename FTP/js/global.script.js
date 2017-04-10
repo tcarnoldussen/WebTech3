@@ -3,15 +3,16 @@ $(document).ready(function(){
 		num_fav = $.cookie("product_counts");
 		btn_text = num_fav + " favorites";
 		$(".fav_btn").text(btn_text);
-	} 
-	if ($.cookie("product_counts")) {
-		num_fav = $.cookie("product_counts");
-		btn_text = num_fav + " favorites";
-		$(".fav_btn").text(btn_text);
 		if ($.cookie("product_counts") == "0") {
 			$.removeCookie("product_counts", { path: '/' });
 		}
+		else {
+		}
 	}
+	else {
+		$(".fav_btn").hide();
+	}
+
 
 	product_id = $(".product_add").parents("table").attr("id");
 	product_cookiename = "store_" + product_id;
@@ -19,4 +20,7 @@ $(document).ready(function(){
 		$(".product_add").addClass("product_added");
        		$(".product_add").text("added");
 	}
+
+	$("#products_list").load("products.html");
 });
+

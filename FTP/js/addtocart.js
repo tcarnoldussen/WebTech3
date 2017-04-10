@@ -23,6 +23,7 @@ function AddProductCountCookie() {
 		$.cookie("product_counts", newsum, {expires: 3, path: "/"});
 	} 
 	else {
+		$(".fav_btn").fadeIn();
 		firstsum = (+sum + 1);
 		btn_text = firstsum + " favorites";
 		$(".fav_btn").text(btn_text);

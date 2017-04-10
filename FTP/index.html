@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Webshop</title>
+	<title>MediaManiacs</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Your personal advisor for adventurous travel experiences in Asia.">
-	<meta name="keywords" content="AsianAdventures, traveling, travel agency, Asia, travel, trip, adventure">
-	<meta name="author" content="Tim and Shaqquile">
+	<meta name="description" content="Webshop with tech stuff">
+	<meta name="keywords" content="MediaManiacs, webshop, tv, smartphone, shop">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="style.css" type="text/css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
-<body contextmenu="context_menu">
+<body>
         <header>
 		<div id="header_inner">
-			<nav>
-				<a href="registration.html">Registration</a>
-				<a href="log_in.html">Log in</a>
-				<a href="cart.html" class="cart_btn">2 products</a>
-			</nav>
 			<a href="index.html">
 				<img id="logo" src="img/logo.png" alt="Logo" title="Logo" />
 			</a>
+			<nav>
+				<a href="registration.html">register</a>
+				<a href="log_in.html">log in</a>
+				<a href="cart.html" class="fav_btn">favorites</a>
+			</nav>
+			<form action="/search.html" method="get" id="search_form">
+				<input type="text" id="q" name="q" placeholder="I am looking for...">
+				<input type="submit" id="search_btn" value="Search">
+			</form>
 		</div>
 	</header>
+	<div class="header_placeholder"></div>
         <main>
 		<section id="home_hero">
 			<div id="slider">
@@ -41,28 +46,47 @@
 				</div>
 			</div>
 		</section>
-		<section id="home_search">
-			<div class="search_block">				
-				<h1>We have awesome products!</h1>
-				<input type="text" id="search" name="search" placeholder="What are your looking for?">
-			</div>
+		<section id="products">
+			<div id="products_list"></div>
 		</section>
 	</main>
 	<footer>
 		<table>
 			<tr>
-				<td>
-					&copy; 2017 Asian Adventures
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
 				</td>
-				<td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_social">
 					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
 					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
 					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+					<br /><br />&copy; 2017 MediaManiacs
 				</td>
 			</tr>
 		</table>
 	</footer>
-	<script type="text/javascript" src="js/addtocart.js"></script>
+	<script type="text/javascript" src="js/global.script.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>
