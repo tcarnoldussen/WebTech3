@@ -38,18 +38,7 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
-// Searches if variable is in array
-function inArray(target, array)
-{
-  for(var i = 0; i < array.length; i++) 
-  {
-    if(array[i] === target)
-    {
-      return true;
-    }
-  }
-  return false; 
-}
+
 // Puts registration information in database
 app.post('/register_post', urlencodedParser, function (req, res) {
    // Prepare output in JSON format
@@ -76,48 +65,42 @@ app.post('/register_post', urlencodedParser, function (req, res) {
    
    if (errors) {
 	   console.log(errors);
+	   
    }
-   else {
+/*    else {
 	  console.log("No errors!")
 	  	// Everything in table needs to be filled out. Needs unique ID.
 		db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
-   }
+   } */
    
-   
-/*    db.each("SELECT mail FROM Users", function(err, row) {
-	   var all_mails = [];
-	   all_mails = row;
-	   console.log(all_mails);
-	   if (inArray(user[5], all_mails) == true) // if true, display "mail already used"
-	   {
-		   alert("E-mail already used")
-	   }		   
-	   else
-	   {
-		   
-	   }
-   }); */
+	// Checker if email already exists in database
+   db.all("SELECT mail FROM Users", function(err, rows) {
+		var all_mails = [];
+		all_mails = rows;
+	   	console.log(all_mails);
+	   	console.log(user[4]);
+		
+		// Checks if email already exists and breaks if found
+		var email_exist = false;
+		for(var i = 0; i < all_mails.length; i++) {
+			if (all_mails[i].mail == user[4]) {
+				email_exist = true;
+				break;
+			}
+		}
+
+		if (email_exist == true)
+		{
+			console.log("ALREADY EXISTS!");
+		}
+		else
+		{
+			// Everything in table needs to be filled out. Needs unique ID.
+			db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
+			console.log("New Registration");
+		}
+   });
 });
-
-
-
-// Also works
-/* app.post('/register_post', urlencodedParser, function (req, res) {
-   // Prepare output in JSON format
-
-	  var user_id = 330;
-      var first_name = req.body.first_name;
-      var last_name= req.body.last_name;
-	  var adress= req.body.street_name;
-	  var mail= req.body.registration_emailadress;
-	  var pass= req.body.pass;
-   console.log(first_name);
-   res.end(JSON.stringify(first_name));
-   // Everything in table needs to be filled out. Needs unique ID, so change if you want to create another User.
-	db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user_id, first_name, last_name, adress, mail, pass);
-}) */
-
-
 
 
 
