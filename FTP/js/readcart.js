@@ -1,18 +1,14 @@
-/*
-	Add to cart fly effect with jQuery. - May 05, 2013
-	(c) 2013 @ElmahdiMahmoud - fikra-masri.by
-	license: http://www.opensource.org/licenses/mit-license.php
-*/  
- 
 var sum = 0;
+
 function PlaceFavCookie($ProductID) {	product_id = $ProductID.parents("table").attr("id");
 	product_cookiename = "store_" + product_id;
 	if ($.cookie(product_cookiename)) {
+		$ProductID.addClass("product_added");
+		$ProductID.text("added");
 	}
 	else {
 		$.cookie(product_cookiename, product_id, {expires: 3, path: "/"});
-	}
-};
+	}};
 
 function AddProductCountCookie() {
 	if ($.cookie("product_counts")) {
@@ -31,10 +27,10 @@ function AddProductCountCookie() {
 };
 
 function AddToCartEffect($AddButton) {
-        $AddButton.addClass('product_added');
-        $AddButton.text('added');
+        $AddButton.addClass("product_added");
+        $AddButton.text("added");
 
-        var cart = $('.fav_btn');
+        var cart = $(".fav_btn");
         var imgtodrag = $(".product_image img");
         if (imgtodrag) {
             var imgclone = imgtodrag.clone()
@@ -49,7 +45,7 @@ function AddToCartEffect($AddButton) {
                     'width': '300px',
                     'z-index': '100'
             })
-                .appendTo($('body'))
+                .appendTo($("body"))
                 .animate({
                 'top': cart.offset().top + 10,
                     'left': cart.offset().left + 10,
@@ -66,6 +62,22 @@ function AddToCartEffect($AddButton) {
         }
     };
 
+function RemoveFromCart($RemoveButton) {
+	product_id = $RemoveButton.parents("tr").attr("id");
+	product_cookiename = "store_" + product_id;
+
+	$RemoveButton.parents("tr").hide();
+	$.removeCookie(product_cookiename, { path: '/' });
+
+	if ($.cookie("product_counts")) {
+		sum = $.cookie("product_counts");
+		newsum = (+sum - 1);
+		btn_text = newsum + " favorites";
+		$(".fav_btn").text(btn_text);
+		$.cookie("product_counts", newsum, {expires: 3, path: "/"});
+	} 
+};
+
 $(".product_add").click(function(){
 	product_id = $(this).parents("table").attr("id");
 	product_cookiename = "store_" + product_id;
@@ -77,4 +89,8 @@ $(".product_add").click(function(){
 		AddProductCountCookie();
 		AddToCartEffect($(".product_add"));
 	}
+});
+
+$(".item_remove_btn").click(function(){
+	RemoveFromCart($(this));
 });
