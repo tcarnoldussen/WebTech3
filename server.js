@@ -26,7 +26,6 @@ app.use(morgan("dev"));
 // First page
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/public/log_in.html'));
-  //__dirname : It will resolve to your project folder.
 });
 
 
@@ -94,6 +93,7 @@ app.post('/register_post', urlencodedParser, function (req, res) {
 			{
 				// Everything in table needs to be filled out. Needs unique ID.
 				db.run("INSERT INTO Users(user_id, firstname, lastname, adress, mail, password) VALUES (?, ?, ?, ?, ?, ?)", user);
+				db.run("INSERT INTO BUYERS(user_id) VALUES (?)", user[0])
 				console.log("New Registration");
 				// Go to Log In Page
 				res.sendFile(path.join(__dirname + "/public/log_in.html"));
