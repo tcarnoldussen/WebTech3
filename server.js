@@ -35,7 +35,12 @@ app.post("/log_in.html", function(req, res){
 			{
 				console.log("Error: " + err)
 			}
-			else
+			else if (rows = [])
+			{	
+				console.log("Invalid login")
+				res.sendFile(path.join(__dirname + "/public/log_in.html"));
+			}
+			else if (rows != [])
 			{
 				rows.forEach(function (row) 
 				{
