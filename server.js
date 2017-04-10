@@ -5,7 +5,6 @@ var path    = require("path");
 var bodyparser = require("body-parser")
 var expressvalidator = require("express-validator");
 var sqlite3 = require("sqlite3").verbose();
-var fs = require("fs");
 var file = "webshopdb.db";
 var db = new sqlite3.Database(file);
 
@@ -25,8 +24,8 @@ app.use(morgan("dev"));
 /////////// BEGIN ROUTES /////////
 
 // First page
-app.get("/",function(req,res){
-  res.sendFile(path.join(__dirname+"/public/log_in.html"));
+app.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/public/log_in.html'));
 });
 
 
@@ -135,8 +134,8 @@ app.post("/log_in.html", function(req, res){
 	}
 	else 
 	{
-		console.log("Login fail");
-		res.sendFile(path.join(__dirname + "/public/log_in_errors.html"));
+	console.log("Login fail");
+	res.sendFile(path.join(__dirname + "/public/log_in_errors.html"));
 	}
 });
 
