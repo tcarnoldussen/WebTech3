@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cart</title>
+	<title>Product - MediaManiacs</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Your personal advisor for adventurous travel experiences in Asia.">
-	<meta name="keywords" content="AsianAdventures, traveling, travel agency, Asia, travel, trip, adventure">
+	<meta name="keywords" content="Your daily source for ">
 	<meta name="author" content="Tim and Shaqquile">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="style.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
 <body contextmenu="context_menu">
         <header>
 		<div id="header_inner">
 			<nav>
 				<a href="index.html">Home</a>
-				<a href="destinations.html">Registreren</a>
-				<a href="about.html">Inloggen</a>
-				<a href="cart.html" class="cart_btn">2 products</a>
+				<a href="register.html" class="current">Registreren</a>
+				<a href="login.html">Inloggen</a>
+				<a href="cart.html" class="fav_btn"></a>
 			</nav>
 			<a href="index.html">
 				<img id="logo" src="img/logo.png" alt="Logo" title="Logo" />
@@ -30,43 +31,6 @@
 		<section id="content_cart">
 			<table id="cart">
 				<tr class="cart_item">
-					<td class="cart_item_amount">
-						<select>
-							<option value="1">1x</option>
-							<option value="2">2x</option>
-							<option value="3">3x</option>
-							<option value="4">4x</option>
-							<option value="5">5x</option>
-							<option value="6">6x</option>
-							<option value="7">7x</option>
-						</select>
-					</td>
-					<td class="cart_item_image">
-						<figure>
-							<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
-						</figure>
-					</td>
-					<td class="cart_item_info">
-						<a class="item_title" href="product.html#209720">Laptop</a>
-						<p class="item_description">More information about this prod...</p>
-						<p class="item_price">€599,-</p>	
-					</td>
-					<td class="cart_item_remove">
-						<div class="item_remove_btn">X</div>
-					</td>
-				</tr>
-				<tr class="cart_item">
-					<td class="cart_item_amount">
-						<select>
-							<option value="1">1x</option>
-							<option value="2">2x</option>
-							<option value="3">3x</option>
-							<option value="4">4x</option>
-							<option value="5">5x</option>
-							<option value="6">6x</option>
-							<option value="7">7x</option>
-						</select>
-					</td>
 					<td class="cart_item_image">
 						<figure>
 							<img src="img/product/0001.jpg" alt="Product title" title="Product title" />
@@ -87,17 +51,40 @@
 	<footer>
 		<table>
 			<tr>
-				<td>
-					&copy; 2017 MediaManiacs
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
 				</td>
-				<td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_menu">
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Information</a></li>
+						<li><a href="#">Privacy statement</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+					</ul>
+				</td>
+				<td class="footer_social">
 					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
 					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
 					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
+					<br /><br />&copy; 2017 MediaManiacs
 				</td>
 			</tr>
 		</table>
 	</footer>
-	<script type="text/javascript" src="js/addtocart.js"></script>
+	<script type="text/javascript" src="js/global.script.js"></script>
+	<script type="text/javascript" src="js/readcart.js"></script>
 </body>
 </html>

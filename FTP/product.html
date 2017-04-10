@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Webshop</title>
+	<title>Product - MediaManiacs</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Your personal advisor for adventurous travel experiences in Asia.">
-	<meta name="keywords" content="AsianAdventures, traveling, travel agency, Asia, travel, trip, adventure">
+	<meta name="keywords" content="Your daily source for ">
 	<meta name="author" content="Tim and Shaqquile">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="style.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
 <body contextmenu="context_menu">
         <header>
@@ -19,7 +20,7 @@
 				<a href="index.html">Home</a>
 				<a href="register.html" class="current">Registreren</a>
 				<a href="login.html">Inloggen</a>
-				<a href="cart.html" class="cart_btn">2 products</a>
+				<a href="cart.html" class="fav_btn"></a>
 			</nav>
 			<a href="index.html">
 				<img id="logo" src="img/logo.png" alt="Logo" title="Logo" />
@@ -28,7 +29,7 @@
 	</header>
         <main>
 		<section id="content_product">
-			<table class="product">
+			<table class="product" id="prod129345">
 				<tr>
 					<td class="product_head">
 						<a class="product_add" href="#buylink">add to</a>
@@ -88,11 +89,12 @@ De Asus ZenBook UX410UA-GV010T is een echte all-rounder. Snel informatie opzoeke
 					<a href="http://twitter.com"><img class="social-icon" alt="Twitter" title="Twitter" src="img/icon/twitter-icon.png" /></a>
 					<a href="http://instagram.com"><img class="social-icon" alt="Instagram" title="Instagram" src="img/icon/instagram-icon.png" /></a>
 					<a href="http://facebook.com"><img class="social-icon" alt="Facebook" title="Facebook" src="img/icon/facebook-icon.png" /></a>
-					<br /><br />&copy; 2017 Asian Adventures
+					<br /><br />&copy; 2017 MediaManiacs
 				</td>
 			</tr>
 		</table>
 	</footer>
+	<script type="text/javascript" src="js/global.script.js"></script>
 	<script type="text/javascript" src="js/addtocart.js"></script>
 </body>
 </html>
