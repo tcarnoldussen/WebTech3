@@ -1,0 +1,32 @@
+INSERT INTO Manufacturer VALUES
+(130114210001,	'Nokia',	'contact@nokia.com',	358104488000,		'Karaportti 3 02610 Espoo, Finland'					),
+(130114210002,	'Samsung',	'contact@samsung.com',	310889090100,		'129 Samsungro Yeongtonggu 443 742 Suwon South Korea'		),
+(130114210003,	'Asus',		'contact@asus.com',	310591570290,		'ASUS Computer International 800 Corporate Way Fremont CA 94539'	),
+(130114210004,	'Acer',		'contact@acer.com',	0736459645,		'Europalaan 89 5232 BC s Hertogenbosch'				),
+(130114210005,	'Medion',	'contact@medion.com',	09002352534,		'John F Kennedylaan 16A 5981 XC Panningen'				),
+(130114210006,	'LG',		'contact@lg.com',	09005435454,		'Yeongdeungpo District Seoel Zuid Korea'				),
+(130114210007,	'Sony',		'contact@sony.com',	319008998318, 		'Minato Tokyo Tokio Japan'						),
+(130114210008,	'Apple',	'contact@apple.com',	08000200589,		'Cupertino Californië Verenigde Staten'				)
+;
+
+INSERT INTO Users VALUES
+(2119051800001,	'John',		'de Groot',		'Veemarktstraat 16 Rotterdam',	'jdegroot86@hotmail.com',		'John1986!'	),
+(2119051800002,	'Alex',		'Schutjens',		'Leidseweg 73 Utrecht',		'lexiepex99@outlook.nl',		'1234QWer'	),
+(2119051800003,	'Jan Metde',	'Korteachternaam',	'Janstraat 93 Utrecht',		'janlul1990@lullos.com',		'JmdKA101'	),
+(2119051800004,	'Julia',	'Franssen',		'Schapenmarkt 27 Lutjebroek',	'juulfranssen@live.nl',			'Ojo@162@'	),
+(2119051800005,	'Maria',	'de Vries',		'Schoepenweg 25 Lelystad',	'Maria88@devries.nl',			'Ewe1s77E'	),
+(2119051800006,	'Fritz',	'Hinter',		'Statensingel 46 Rotterdam',	'fritshinter12@gmail.com',		'eJoq39%eri0'	),
+(2119051800007,	'Noa',		'van der Merwe',	'Singel 138 Dordrecht',		'n.vandermerwe@hotmail.com',		'vannM##9'	),
+(2119051800008,	'Z.G.',		'Munters',		'Hoofdweg 10 Lijnden',		'Zgmunters@live.nl',			'MunZG1091'	),
+(2119051800009,	'John',		'Franssen',		'Springweg 178',		'mfranssen@live.nl',			'BisJ63%'	),
+(2119051800010,	'Maarten',	'Achterberg',		'Kerkstraat 16 Amsterdam',	'm.th.h.achterberg@hotmail.com',	'Hohq69%'	)
+;
+
+
+INSERT INTO Sellers VALUES
+(2119051800010),
+(2119051800007),
+(2119051800004),
+(2119051800001),
+(2119051800010)
+;
